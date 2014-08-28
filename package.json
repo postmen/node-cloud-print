@@ -1,0 +1,8 @@
+{
+    "name": "cloudprint",
+    "version": "0.0.1",
+    "dependencies":
+    {
+        "googleapis": "git+ssh://git@github.com:postmen/google-api-nodejs-client.git"
+    }
+}
