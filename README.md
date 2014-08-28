@@ -20,7 +20,9 @@ var cloudprint = new Cloudprint(
         auth: {
             client_id: 'YOUR_CLIENT_ID',
             client_secret: 'YOUR_CLIENT_SERECT',
-            redirect_uri: 'REDIRECT_URI'
+            redirect_uri: 'REDIRECT_URI',
+            access_token: 'ACCESS TOKEN',
+            refresh_token: 'REFRESH_TOKEN'
         }
     });
     
