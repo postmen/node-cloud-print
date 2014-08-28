@@ -33,13 +33,13 @@ var cloudprint = new Cloudprint(
 
 ```js
 var options = {};//extra options for filter
-cloudprint.getPrinters(options, function(response){});
+cloudprint.getPrinters(options, function(err, response){});
 ```
 
 ###Get specific printer info
 
 ```js
-cloudprint.getPrinter("printer id", function(response){})
+cloudprint.getPrinter("printer id", function(err, response){})
 ```
 
 ###Submit a print job
@@ -55,27 +55,11 @@ var params = {
     
   }
 };
-cloudprint.print(params,function(response){});
+cloudprint.print(params,function(err, response){});
 ```
 
-### Response format
+### Response
 
-```js
+raw response from service provider.
 
-{
-  meta:{
-    code: 200/-1/actual code
-    message: "message",
-    type: "type",
-    errors:{}
-  },
-  data:
-  {
-    result:
-    {
-      
-    }
-  }
-}
 
-```
