@@ -60,6 +60,14 @@ cloudprint.print(params,function(err, response){});
 
 ### Response
 
-raw response from service provider.
+```js
+{
+    "result":
+    {
+    //raw response from service provider.
+    }
+}
+```
+
 
 
