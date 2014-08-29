@@ -62,6 +62,7 @@
         options = options || {};
 
         var self = this;
+        this.cloud_print = cloud_print;
         if (options.auth) {
             var auth = options.auth;
             this.oauth2_client = new google.auth.OAuth2(auth.client_id, auth.client_secret, auth.redirect_uri);
@@ -72,12 +73,12 @@
         }
 
         this.getPrinters = function (params, callback) {
-            _flow(params, callback, self, cloud_print.printers.search);
+            _flow(params, callback, self, this.cloud_print.printers.search);
         };
 
         this.getPrinter = function (printer_id, callback) {
             var params = {printerid: printer_id};
-            _flow(params, callback, self, cloud_print.printers.get);
+            _flow(params, callback, self, this.cloud_print.printers.get);
         };
 
         this.print = function (params, callback) {
@@ -94,7 +95,7 @@
             params.renameProperty('content_type','contentType','url');
             params.ticket = ticket;
 
-            _flow(params, callback, self, cloud_print.jobs.sumbmit);
+            _flow(params, callback, self, this.cloud_print.jobs.sumbmit);
         };
 
     }

@@ -3,7 +3,7 @@
  */
 
 var util = require('util');
-var CloudPrint = require('../cloudprint.js');
+var CloudPrint = require('../index');
 
 var cloudprint = new CloudPrint({
     service_provider: 'google',

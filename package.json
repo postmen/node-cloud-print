@@ -25,6 +25,10 @@
 	"engines": {
 		"node": ">= 0.10.0"
 	},
+    "dependencies":
+    {
+        "googleapis": "git+ssh://git@github.com:postmen/google-api-nodejs-client.git"
+    },
 	"devDependencies": {
 		"grunt": "^0.4.5",
 		"grunt-contrib-jshint": "^0.10.0",
@@ -32,7 +36,12 @@
 		"grunt-ec2": "^0.8.1",
 		"grunt-prompt": "^1.1.0",
 		"grunt-shell": "^0.7.0",
-		"grunt-ssh": "^0.11.1"
+		"grunt-ssh": "^0.11.1",
+        "unit.js":"0.1.8"
 	},
-	"keywords": []
+	"keywords": [],
+    "scripts":
+    {
+        "test": "node node_modules/.bin/test test/google_cloudprint_plugin_test.js -R spec"
+    }
 }
