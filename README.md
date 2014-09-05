@@ -1,20 +1,20 @@
 Cloud Print Module for Node.js
 ========================
 
-Cloudprint is a node.js module providing convenient apis to perform cloud printing throught various cloud printing service provider.
+Cloud-Print-Nodejs is a node.js module providing convenient apis to perform cloud printing throught various cloud printing service provider.
 
 At this moment only [Google Cloud Print](https://www.google.com/cloudprint) is available.
 
-Usage (Draft)
+Usage
 ========================
 
 ###Construct a cloud print instance
 
 ```js
 
-var Cloudprint = require('cloudprint');
+var CloudPrint = require('cloudprint');
 
-var cloudprint = new Cloudprint(
+var cloud_print = new CloudPrint(
     {
         service_provider: 'google',
         auth: {
@@ -33,13 +33,13 @@ var cloudprint = new Cloudprint(
 
 ```js
 var options = {};//extra options for filter
-cloudprint.getPrinters(options, function(err, response){});
+cloud_print.getPrinters(options, function(err, response){});
 ```
 
 ###Get specific printer info
 
 ```js
-cloudprint.getPrinter("printer id", function(err, response){})
+cloud_print.getPrinter("printer id", function(err, response){})
 ```
 
 ###Submit a print job
@@ -55,7 +55,7 @@ var params = {
     
   }
 };
-cloudprint.print(params,function(err, response){});
+cloud_print.print(params,function(err, response){});
 ```
 
 ### Response
@@ -67,6 +67,8 @@ cloudprint.print(params,function(err, response){});
     //raw response from service provider.
     }
 }
+
+refer to: [Google Cloud Print API](https://developers.google.com/cloud-print/docs/appInterfaces)
 ```
 
 
