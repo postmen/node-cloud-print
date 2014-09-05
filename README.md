@@ -12,7 +12,7 @@ Usage
 
 ```js
 
-var CloudPrint = require('cloudprint');
+var CloudPrint = require('cloud-print');
 
 var cloud_print = new CloudPrint(
     {
