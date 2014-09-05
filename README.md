@@ -68,8 +68,8 @@ cloud_print.print(params,function(err, response){});
     }
 }
 
-refer to: [Google Cloud Print API](https://developers.google.com/cloud-print/docs/appInterfaces)
-```
 
+```
+refer to [Google Cloud Print API](https://developers.google.com/cloud-print/docs/appInterfaces)
 
 
