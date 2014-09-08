@@ -46,14 +46,51 @@ cloud_print.getPrinter("printer id", function(err, response){})
 
 ```js
 var params = {
-  title:'Print job title',
-  content: 'http://abc.com/123.png',
-  content_type: 'url', //optional, default = url
-  printer_id : "123123123123-sdfjjv=123",
-  tags: ['tag1','tag2'],//optional, default = [],
-  setting:{
-    
-  }
+	title: 'Print job title',
+	content: 'http://abc.com/123.png',
+	content_type: 'url', //optional, default = url
+	printer_id: "123123123123-sdfjjv=123",
+	tags: ['tag1', 'tag2'],//optional, default = [],
+	setting: {
+		reverse_order: {
+			reverse_order: false
+		},
+		page_range: {},
+		copies: {
+			'copies': 1
+		},
+		color: {
+			type: 'STANDARD_MONOCHROME',
+			vendor_id: ''
+		},
+		fit_to_page: {
+			type: 'NO_FITTING'
+		},
+		collate: {
+			collate: false
+		},
+		media_size: {
+			height_microns: 297000,
+			width_microns: 210000,
+			is_continuous_feed: false,
+			vendor_id: ''
+		},
+		page_orientation: {
+			type: 'LANDSCAPE'
+		},
+		dpi: {
+			vertical_dpi: 300,
+			horizontal_dpi: 300
+		},
+		pages_per_side: {
+			layout: 'LEFT_TO_RIGHT_TOP_TO_BOTTOM',
+			pages_per_side: 1
+		},
+		duplex: {
+			type: 'NO_DUPLEX'
+		}
+
+	}
 };
 cloud_print.print(params,function(err, response){});
 ```
