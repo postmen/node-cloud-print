@@ -2,23 +2,23 @@
 	"name": "cloud-print",
 	"description": "The cloud print module",
 	"version": "0.0.2",
-	"homepage": "https://github.com/postmen/cloud-print-nodejs",
+	"homepage": "https://github.com/postmen/node-cloud-print",
 	"author": {
 		"name": "Postmen",
-		"email": "support@postmen.io",
-		"url": "https://www.postmen.io"
+		"email": "support@postmen.com",
+		"url": "https://www.postmen.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/postmen/cloud-print-nodejs.git"
+		"url": "git://github.com/postmen/node-cloud-print.git"
 	},
 	"bugs": {
-		"url": "https://github.com/postmen/cloud-print-nodejs/issues"
+		"url": "https://github.com/postmen/node-cloud-print/issues"
 	},
 	"licenses": [
 		{
 			"type": "MIT",
-			"url": "https://github.com/postmen/cloud-print-nodejs/blob/master/LICENSE-MIT"
+			"url": "https://github.com/postmen/node-cloud-print/blob/master/LICENSE-MIT"
 		}
 	],
 	"main": "index.js",
